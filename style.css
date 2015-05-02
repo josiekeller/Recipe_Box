@@ -1,0 +1,227 @@
+style.css
+
+*, 
+*:before, 
+*:after {
+  box-sizing: inherit;
+}
+
+/* Normal CSS */
+
+.body-container {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: .25rem;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+	text-align: center;
+	color: #F67F21;
+	font-size: 1.25rem;
+}
+
+.family-story h1,
+.about h1 {
+	color: #D63F24;
+}
+
+h2 {
+	color: #F9A61A;
+}
+
+p {
+	color: #3D4840;
+	font-size: .75rem;
+}
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* Header */
+
+.site-header {
+	margin: 0;
+	border-bottom: 2px solid #77B17F;
+}
+
+.site-header h1,
+.site-header h1 a {
+	font-family: 'Dancing Script', serif;
+	color: #594E49;
+	text-decoration: none;
+	font-size: 2rem;
+}
+
+.site-nav {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	justify-content: space-around;
+}
+
+.site-nav-item a {
+	text-decoration: underline;
+	margin: 1rem;
+	color: #F9A61A;
+}
+
+.site-nav-item {
+	color: #594E49;
+}
+
+.cf:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Main Content */
+
+.family-story p {
+	text-align: justify;
+}
+
+#recipe-card img {
+	max-width: 100%;
+}
+
+.container .content {
+    display: none;
+    padding : 5px;
+    color: #3D4840;
+}
+
+.container .header {
+	font-size: 1rem;
+	color: #77B17F;
+}
+
+/* Sidebar */
+
+.sidebar-nav {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.nav-item {
+	text-align: center;
+}
+
+	#sidebar img {
+		max-width: 80%;
+	}
+
+	.about p {
+		text-align: justify;
+	}
+
+/* Wide CSS */
+
+@media (min-width: 800px) {
+
+	.body-container {
+		max-width: 800px;
+	}
+
+	h1 {
+		font-size: 2rem;
+	}
+
+	#main h1 {
+	text-align: left;
+	}
+
+	p {
+	font-size: 1rem;
+}
+
+	/* Header */
+
+	.title {
+		width: 50%;
+		float: left;
+	}
+
+	.site-nav {
+		width: 50%;
+		float: left;
+	}
+
+	.site-header h1,
+	.site-header h1 a {
+		font-size: 3rem;
+	}
+
+	.site-nav {
+		line-height: 6rem;
+	}
+
+	/* Main Content */
+
+	#main {
+		width: 70%;
+		float: left;
+	}
+
+	.family-story {
+		width: 500px;
+	}
+
+	#recipe-card img {
+	width: 500px;
+	height: 300px;
+	margin: 0;
+	}
+
+	.container .header {
+	font-size: 1.5rem;
+	}
+
+	/* Sidebar */
+
+	#sidebar {
+		width: 30%;
+		float: left;
+		text-align: center;
+	}
+
+	#sidebar img {
+		width: 200px;
+		height: 200px;
+	}
+
+	.about p {
+		text-align: center;
+	}
+
+}
+
+/* Carousel */
+
+#carousel {
+		width: 800px;
+		overflow: hidden;
+	}
+
+	#carousel ul {
+		width: 3200px;
+		padding: 0;
+		margin: 0;
+	}
+
+	#carousel ul li {
+		width:600px;
+		margin: 20px 100px;
+		padding: 0;
+		text-align: center;
+		height: 660px;
+		list-style: none;
+		float:	left;
+	}
