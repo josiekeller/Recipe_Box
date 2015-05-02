@@ -8,6 +8,7 @@ $(document).ready(function(){
 	},5000);
 });
 
+
 $(".header").click(function () {
 
     $header = $(this);
